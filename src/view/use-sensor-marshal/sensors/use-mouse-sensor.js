@@ -245,10 +245,7 @@ export default function useMouseSensor(api: SensorAPI) {
         if (!actions) {
           return;
         }
-
-        // consuming the event
-        event.preventDefault();
-
+        
         const point: Position = {
           x: event.clientX,
           y: event.clientY,
